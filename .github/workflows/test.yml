@@ -23,7 +23,7 @@ jobs:
       uses: docker/setup-qemu-action@v2
 
     - name: Copy .env.example to .env
-      run: cp ./integ-test/.env.example ./integ-test.env
+      run: cp ./integ-test/.env.example ./integ-test/.env
 
     - name: Run integration script
       run : cd integ-test && npm run test:integration
